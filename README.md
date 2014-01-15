@@ -1,4 +1,4 @@
-AsgerSommer.github.io
+asgersommer.github.io
 =====================
 
-My GitHub page.
+My GitHub page. Not much to see here yet.
