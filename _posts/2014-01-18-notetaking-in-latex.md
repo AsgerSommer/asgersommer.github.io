@@ -1,20 +1,21 @@
-#Notetaking in LaTeX with TextMate 2
+---
+layout: post
+title:  "Notetaking in LaTeX with TextMate 2"
+date:   2014-01-18 19:04:55
 
-![](http://i.imgur.com/JXth0qQ.png?1)
+---
 
 **_For the actual guide, skip to "ingredients"_**
 
-Notetaking has always been a messy thing to do *just right* for myself. Every time I try another format, another app or website, there's some feature missing in action or worse yet - there are unnecessary ones that destroy my workflow. Often times I almost consider exclusively using pen and paper.
+Notetaking has always been a messy thing to do *just right* for myself. Every time I try another format or app, there's some feature missing in action or worse yet - there are unnecessary ones that destroy my workflow. Often times I almost consider exclusively using pen and paper.
 
-For the majority of my time at gymnasium (danish equalivalent of high school, with some differences) my notetaking has been done with Google Docs. The upsides is frictionless switching between platforms and devices, my documents are simply right there, available at any time. The "cloud" fantasy was actually real for a while. The ability to easily share notes or even invoke a 30+ class hive mind (aka. "history gg ez") is a fantastic thing (until other people plagiarize you though).
+For the majority of my time at gymnasium (danish equalivalent of high school, with some differences) my notetaking has been done with Google Docs. The upsides is frictionless switching between platforms and devices, my documents are simply right there, available at any time. The ability to easily share notes or even invoke a 30 person class hive mind is a fantastic thing.
 
-Despite all this, I'm going to do something entirely different from now on, and it all started with an awesome new chemistry teacher who finally taught us how you really need to typeset chemical equations and notation. But then I realize that the  equation system in Google Docs simply can't do that.
+But there was a problem. Subjects like math, physics and chemistry required precise notation that wasn't possible in any correct or quick way in Google Docs. Until then I used notetaking on paper, but I'd really like my stuff digitally archived and easily searchable.
 
-This also coincided with another problem. As of yet subjects like math, physics and chemistry simply required notetaking on paper, but I'd really like my stuff digitally archived and easily searchable. There's no quick way to do math, physics and chemistry notes in Google Docs in any good way. TI-Nspire CAS Student Software is not a suitable notetaking application and though it fits the bill for math assignments, it won't do for physics and chemistry. I needed something able to deal with all the usecases, quickly, easily and transferable between platforms the same way that Google Docs did it.
+The solution was found in LaTeX. A cumbersome beast, and one I'd already grown familiar with, using it before on a math class project. But the wiki system that we used was way too slow and cumbersome to fit the bill. Editing became a huge mess when we reached the end.
 
-The solution had slowly dawned on me: LaTeX. A cumbersome beast, and one I'd already grown familiar with, using it on a math class project. But the wiki system that we used was way too slow and cumbersome to fit the bill. Editing became a huge mess when we reached the end.
-
-I found StackEdit, which seemed perfect as it could integrate seamlessly into Google Drive and run in the browser. It supported Markdown and Mathjax (essentially the math part of LaTeX), had live preview and seemed perfect. But the software felt off, and often times my notes simply wouldn't load or took way too long. It also couldn't handle more than one document at a time. It was beautiful to be able to write redox reactions as quickly on my keyboard as I could on paper, but I was ready to give up.
+I found StackEdit, which seemed perfect as it could integrate seamlessly into Google Drive and run in the browser. It supported Markdown and Mathjax (essentially the math part of LaTeX), had live preview and seemed perfect. But the software felt off, and often times my notes simply wouldn't load or took too long to do so. It also couldn't handle more than one document at a time. It was beautiful to be able to write redox reactions as quickly on my keyboard as I could on paper, but I was ready to give up.
 
 But I think I've found a recipe that makes it work.
 
