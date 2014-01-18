@@ -1,7 +1,9 @@
 ---
-layout: post
-title:  "Notetaking in LaTeX with TextMate 2"
-date:   2014-01-18 19:04:55
+layout: 	post
+title:  	"Notetaking in LaTeX with TextMate 2"
+date:   	2014-01-18 19:04:55
+published:	true
+tags:		[latex]
 
 ---
 
