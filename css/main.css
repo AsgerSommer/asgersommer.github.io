@@ -6,12 +6,10 @@
 a {
   color: #00a;
 }
-
-a:hover {
-  color: black;
-}
 a:visited {
   color: #a0a;
+}
+a:hover {
 }
 .meta {
   color: #aaa;
@@ -160,14 +158,13 @@ body {
 	line-height: 1.5em;
 }
 
-.title {
+.title a {
     color: white;
+	text-decoration: none;
 }
 
-.title a:link, a:visited {
-	color: white; /* #EEEFF7; */
-    text-decoration: none;
-}
+/* .title a:link, a:visited {
+} */
 
 /* ==============
     MOBILE: Menu
