@@ -3,6 +3,16 @@
    ========================================================================== */
 
 /* additions */
+a {
+  color: #00a;
+}
+
+a:hover {
+  color: black;
+}
+a:visited {
+  color: #a0a;
+}
 .meta {
   color: #aaa;
 }
