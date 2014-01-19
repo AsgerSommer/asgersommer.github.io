@@ -1,6 +1,6 @@
 asgersommer.github.io
 =====================
 
-My GitHub page, made with Jekyll. Not much to see here yet.
+My GitHub page, made with Jekyll and a mix of responsive HTML5 Boilerplate from [http://www.initializr.com/](http://www.initializr.com/). I mainly plan to blog on it, and post links to things I've made or projects I've participated in.
 
-Planning on whipping up a new design soon.
+The design is missing some imagery and perhaps a more colorful palette.
