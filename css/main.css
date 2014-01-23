@@ -112,6 +112,8 @@ textarea {
 
 .header-container {
     /* border-bottom: 20px solid #31353D; */
+	background-image:url(/assets/img/cartographer.png); 
+	background-repeat:repeat
 }
 
 .footer-container /*,
@@ -119,7 +121,7 @@ textarea {
     border-top: 20px solid #31353D;
 }
 
-.header-container,
+/* .header-container, */
 .footer-container /*,
 .main aside */ {
     background: #1C1D21;
@@ -136,11 +138,14 @@ textarea {
 }
 
 .title a, h1 {
-	/* 'Lobster', 'Allerta' or 'Arvo' */
 	font-family: 'Lobster', Helvetica, Arial, sans-serif;
 	font-size: 36px;
     color: white !important;
 	text-decoration: none !important;
+}
+
+.title a:hover, h1:hover {
+	text-decoration: underline !important;
 }
 
 /* ==============
@@ -188,8 +193,9 @@ nav a:hover {
 }
 
 .main aside {
-    color: white;
-    /* padding: 0px 5% 10px; */ /* might affect twitter box */
+    color: lightgray;
+	font-size: 12px;
+    /* padding: 0px 5% 10px; */
 }
 
 .twitter-timeline {
