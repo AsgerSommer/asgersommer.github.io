@@ -6,6 +6,9 @@ layout: default
   <h1>{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
+
+  <h3>Liked this post?</h3>
+  {% include twitter_plug.html %}
 </div>
 
 <div class="related">
@@ -22,4 +25,8 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+</div>
+
+<div class="post">
+{% include comments.html %}
 </div>
