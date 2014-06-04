@@ -1,4 +1,12 @@
-name: Asger Sommer
-markdown: redcarpet
-pygments: true
-
+title:        Asger Sommer
+tagline:      'Asger Sommer (Sommer717)'
+description:  'A blog about games, design and programming.'
+url:          http://asgersommer.com
+version:      1.1.1
+author:
+  name:       ''
+  email:      ''
+permalink:    pretty
+markdown:     redcarpet
+pygments:     true
+paginate:     5

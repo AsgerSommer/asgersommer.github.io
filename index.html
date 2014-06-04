@@ -1,20 +1,37 @@
 ---
 layout: default
-title: Asger Sommer (Sommer717)
 ---
 
-<div id="about">
-	<span>Hi, my name is Asger Sommer and I'm an *insert imaginary future title* from Denmark. Or really, I just don't know yet. I blog about programming, game development and game design. In my free time I'm the co-admin of <a href="http://gamesiden.dk">gamesiden.dk</a> where you'll also find my <a href="#">Far Cry 2 Map Pack</a>. I'm hoping to fill the page up with some more interesting stuff coming soon.
-	</span>
-	<p>You can reach me on my twitter: <a href="https://twitter.com/Sommer717">@Sommer717</a> and find my code <a href="https://github.com/AsgerSommer">here on Github</a>.</p>
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1>
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.content }}
+  </div>
+  {% endfor %}
 </div>
 
-
-<div id="home">
-  <h3>Blog Posts</h3>
-  <ul class="posts front">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a href="/page{{paginator.next_page}}" class="older">Older</a>
+  {% else %}
+    <span class="next">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a href="/" class="newer">Newer</a>
+    {% else %}
+      <a href="/page{{paginator.previous_page}}" class="newer">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="previous">Newer</span>
+  {% endif %}
 </div>
