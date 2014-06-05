@@ -15,7 +15,7 @@ layout: default
 
     {{ post.content | split:"<!-- more -->" | first | truncate:300 }}
     {% if post.content | size > 300 %}
-      <strong><a href="{{ post.url }}">Continue reading &#10145;</a></strong>
+      <strong><a href="{{ post.url }}">Continue reading &#65515;</a></strong>
     {% endif %}
 
     <!-- add an "strip_html | " after the "first |" to strip images from the excerpts -->
