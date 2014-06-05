@@ -17,10 +17,10 @@ Such are the famous words of the Senior Title Capitalizer of GAMESIDEN.DK.
 
 ## Projects of Mass Destruction
 ### Artifactor
-A game built for maximized addictiveness and entertainment output. It is said that were it to be monetized, the entire global financial system would collapse. Luckily for us all, Asger doesn't believe in the evil Free-2-Play system. **Coming soon**.
+**Coming soon**: A game built for maximized addictiveness and entertainment output. It is said that were it to be monetized, the entire global financial system would collapse. Luckily for us all, Asger doesn't believe in the evil Free-2-Play system.
 
 ### Surf Control
-A Google Chrome Extension built for controlling the popul... erhm.. helping people focus their time on the computer better and more efficiently. Like spending more time on playing games like Artifactor. **Coming soon**.
+**Coming soon**: A Google Chrome Extension built for controlling the popul... erhm.. helping people focus their time on the computer better and more efficiently. Like spending more time on playing games like Artifactor.
 
 ## Plan for World Domination
 
