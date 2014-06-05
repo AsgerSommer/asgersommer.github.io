@@ -4,7 +4,7 @@ description:  'A blog about code, design and games.'
 url:          http://asgersommer.com
 version:      1.1.1
 author:
-  name:       'Asger Sommer <br>'
+  name:       ''
   email:      ''
 permalink:    pretty
 markdown:     redcarpet
