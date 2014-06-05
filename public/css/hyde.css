@@ -501,3 +501,30 @@ a:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+.button {
+  padding: .5em 1em;
+  margin: 1em 0;
+  border-radius: .25em;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #181818;
+  background-color: #1B1B1B;
+  -webkit-transition: background-color .2s ease-out;
+  -moz-transition: background-color .2s ease-out;
+  -o-transition: background-color.2s ease-out;
+  transition: background-color .2s ease-out;
+  box-shadow: 0 1px 0 #484848 inset,0 1px 2px -1px #0D0D0D;
+  display: block;
+}
+
+.button:hover { 
+  border: 1px solid #1D1D1D; /* darker */
+  background-color: #232323; /* light */
+  box-shadow: 0 1px 0 #3B3B3B inset,0 1px 2px -1px #121212; /* very light and very dark */
+}
+
+#SPECIAL a {
+  text-decoration: none !important;
+  color: #fff;
+}
