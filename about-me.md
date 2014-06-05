@@ -24,7 +24,7 @@ Such are the famous words of the Senior Title Capitalizer of GAMESIDEN.DK.
 
 ## Plan for World Domination
 
-1. Start this blog
+*1. Start this blog* &#10004;
 2. Commence massive propaganda campaign under the guise of "blogging"
 3. Find a cure for procrastination
 4. Announce the release of the P.M.D.'s.
