@@ -1,30 +1,28 @@
 ---
 layout: default
 ---
-
 <div class="post">
-  <h1>{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+
+  <h1>
+    {% if page.link %}
+    <a href="{{ post.link }}">⇜ {{ page.title }} ⇝</a>
+    {% else %}<span class="post-title>">{{ page.title }}</span>
+    {% endif %}
+  </h1>
+
+  <p class="post-metadata"> <span class="post-date">{{ page.date | date: "%B %-d, %Y" }} • </span>
+    <span class="read-time" title="Estimated read time">
+      {% assign reading_time = content | strip_html | number_of_words | plus:91 | divided_by: 180 %}
+      {% if reading_time < 0.5 %}1 min read
+      {% else %}{{ reading_time }} min read
+      {% endif %}
+    </span>
+  </p>
+
   {{ content }}
 
   <h3>Liked this post?</h3>
   {% include twitter_plug.html %}
-</div>
-
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
 </div>
 
 <div class="post">

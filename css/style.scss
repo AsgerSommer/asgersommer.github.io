@@ -1,0 +1,891 @@
+---
+sitemap:
+  exclude: 'yes'
+---
+
+/*
+this ensures Jekyll reads the file to be transformed into CSS later
+only Main files contain this front matter, not partials.
+*/
+
+/*
+* Contents
+* Body resets
+* Custom type
+* Messages
+* Container
+* Masthead
+* Footer
+* Posts and pages
+* Pagination
+* Responsive iFrame Embeds
+* Syntax (Code)
+* Bigfoot tooltip popovers
+*/
+
+/* replaces red-orange */
+$dark-grey: #222;
+$red-orange: #BF1F49;
+$green-matte: #94B288;
+$grey: #808080;
+$light-grey: #C0C0C0;
+
+$small-spacing: 0.5rem;
+$large-spacing: 2rem;
+$page-width: 90vw;
+$max-page-width: 700px;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Roboto Slab', serif;
+  // used lato before,
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+/* No `:visited` state is required by default (browsers will use `a`) */
+a {
+  font-weight: 600;
+  color: $dark-grey;
+  text-decoration: none;
+}
+a strong {
+  color: inherit;
+}
+/* `:focus` is linked to `:hover` for basic accessibility */
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/*Permalink link styling*/
+
+.permalink {
+  border-bottom: none !important;
+  color: $dark-grey !important;
+}
+
+.permalink:hover,
+.permalink:focus {
+  color: $green-matte !important;
+  text-decoration: none;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  margin-top: 2em;
+  font-weight: bold;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility;
+  a {
+    background-position: 0 1.375rem;
+    background-size: 1px 1px;
+  }
+}
+h1 {
+  font-size: 1.75rem;
+  margin-top: $large-spacing;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+h4 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  font-style: italic;
+}
+h5, h6 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* Body text */
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+/* Lists */
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-bottom: .5rem;
+}
+
+/* Misc */
+hr {
+  position: relative;
+  margin-top: -$small-spacing;
+  margin-bottom: -$small-spacing;
+  font-size: 2rem;
+  border: none;
+  text-align: center;
+  color: $green-matte;
+}
+
+hr:after {
+  content: "· · ·";
+  letter-spacing: 0.25em;
+}
+
+abbr {
+  font-size: 85%;
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase;
+}
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #e5e5e5;
+}
+
+/* Code */
+code,
+pre {
+  font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
+}
+code {
+  padding: .25em .5em;
+  font-size: 85%;
+  color: #bf616a;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+}
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: .8rem;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f9f9f9;
+}
+pre code {
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+  background-color: transparent;
+}
+
+/* Pygments via Jekyll */
+.highlight {
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+.highlight pre {
+  margin-bottom: 0;
+}
+
+/* Gist via GitHub Pages */
+.gist .gist-file {
+  font-family: Menlo, Monaco, "Courier New", monospace !important;
+}
+.gist .markdown-body {
+  padding: 15px;
+}
+.gist pre {
+  padding: 0;
+  background-color: transparent;
+}
+.gist .gist-file .gist-data {
+  font-size: .8rem !important;
+  line-height: 1.4;
+}
+.gist code {
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+/* Quotes */
+blockquote {
+  padding-left: 1rem;
+  margin: 0;
+  border-left: 4px solid $light-grey;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+img + em {
+  display: block;
+  font-size: smaller;
+  text-align: center;
+  // because img tag has no margins, need to add margin because no <p> wrap
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+}
+
+.img-narrow {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.img-right {
+  margin-left: 1em;
+  margin-bottom: 1em;
+  width: 30%;
+  float: right;
+}
+
+.img-left {
+  margin-right: 1em;
+  margin-bottom: 1em;
+  width: 30%;
+  float: left;
+}
+
+.img-circular {
+  border-radius: 50%;
+  shape-outside: circle();
+  margin: 0 0 1em 1em;
+}
+
+/* Paragraph Alignment */
+
+.center {
+  text-align: center;
+}
+
+
+/* Tables */
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: .25rem .5rem;
+  border: 1px solid #e5e5e5;
+}
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9;
+}
+
+
+/*
+* Custom type
+*
+* Extend paragraphs with `.lead` for larger introductory text.
+*/
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+
+/*
+* Messages
+*
+* Show alert messages to users. You may add it to single elements like a `<p>`,
+* or to a parent if there are multiple elements to show.
+*/
+
+.message {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+
+/*
+* Container
+*
+* Center the page content.
+*/
+
+.container {
+  width: $page-width;
+  max-width: $max-page-width;
+  margin: auto;
+}
+
+
+/*
+* Masthead
+*
+* Super small header above the content for site name and short description.
+*/
+
+.masthead {
+  padding-top: $large-spacing;
+  padding-bottom: $large-spacing;
+  width: $page-width;
+  max-width: $max-page-width;
+  margin: auto;
+  margin-bottom: $large-spacing;
+}
+
+.masthead-container {
+  color: #fff;
+  background-image: url(/assets/cartographer.png);
+  background-repeat: repeat;
+}
+
+.masthead-title a {
+  color: white;
+}
+
+.masthead-title a:hover {
+  text-decoration: none;
+}
+
+.nav-page a {
+  //transition: opacity 0.2s ease-in-out;
+  color: white;
+}
+
+.nav-page a:hover {
+  transition: opacity 0.25s ease-in-out;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.masthead-title {
+  margin-top: 0;
+  margin-right: 3rem;
+  font-weight: normal;
+  font-size: 1.337rem;
+}
+
+.nav-page a {
+  margin-right: 1em;
+  text-transform: uppercase;
+}
+
+.nav-page {
+  margin-top: 1em;
+}
+
+@media (max-width: 600px) {
+  .nav-page {
+    display: block;
+  }
+}
+
+/*
+* Posts and pages
+*
+* Each post is wrapped in `.post` and is used on default and post layouts. Each
+* page is wrapped in `.page` and is only used on the page layout.
+*/
+
+.page,
+.post {
+  margin-bottom: $large-spacing;
+}
+
+/* Blog post or page title */
+.post-title a {
+  color: $dark-grey;
+}
+
+/* Meta data line below post title */
+.post-metadata {
+  font-size: smaller;
+  color: $grey;
+}
+
+/* Data line on archive page next to each title */
+.archive-date {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: $grey;
+}
+
+/* Divider between posts on the homepage*/
+.divider {
+  border-top: 10px solid $light-grey;
+  margin-top: $large-spacing;
+  margin-bottom: $large-spacing;
+}
+
+/* Footnote text that appears below each post on the homepage and on each article page.*/
+
+.footnotes {
+  border-top: 1px solid $grey;
+  font-size: smaller;
+}
+
+/*
+* Footer
+*
+*
+*/
+
+.footer {
+  color: $grey;
+  text-align: center;
+  margin: $large-spacing;
+  font-size: smaller;
+}
+
+.footer-logo {
+  width: 4rem;
+  height: auto;
+  margin: auto;
+}
+
+/*
+* Pagination
+*
+* Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+* there are no more previous or next posts to show.
+*/
+
+.pagination {
+  color: $grey;
+}
+
+.pagination a {
+  display: block;
+  height: auto;
+  margin-bottom: $large-spacing;
+  float: left;
+  width: 50%;
+}
+
+/* Pagination items can be `span`s or `a`s */
+.newer {
+  text-align: right;
+}
+
+/*
+* Responsive iFrame Embeds
+*
+*
+*/
+
+.responsive-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  height: 0;
+  overflow: hidden;
+}
+
+.responsive-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*
+* Syntax (Code)
+*
+*/
+
+.highlight .hll { background-color: #ffc; }
+.highlight .c { color: #999; } /* Comment */
+.highlight .err { color: #a00; background-color: #faa } /* Error */
+.highlight .k { color: #069; } /* Keyword */
+.highlight .o { color: #555 } /* Operator */
+.highlight .cm { color: #09f; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #099 } /* Comment.Preproc */
+.highlight .c1 { color: #999; } /* Comment.Single */
+.highlight .cs { color: #999; } /* Comment.Special */
+.highlight .gd { background-color: #fcc; border: 1px solid #c00 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #f00 } /* Generic.Error */
+.highlight .gh { color: #030; } /* Generic.Heading */
+.highlight .gi { background-color: #cfc; border: 1px solid #0c0 } /* Generic.Inserted */
+.highlight .go { color: #aaa } /* Generic.Output */
+.highlight .gp { color: #009; } /* Generic.Prompt */
+.highlight .gs { } /* Generic.Strong */
+.highlight .gu { color: #030; } /* Generic.Subheading */
+.highlight .gt { color: #9c6 } /* Generic.Traceback */
+.highlight .kc { color: #069; } /* Keyword.Constant */
+.highlight .kd { color: #069; } /* Keyword.Declaration */
+.highlight .kn { color: #069; } /* Keyword.Namespace */
+.highlight .kp { color: #069 } /* Keyword.Pseudo */
+.highlight .kr { color: #069; } /* Keyword.Reserved */
+.highlight .kt { color: #078; } /* Keyword.Type */
+.highlight .m { color: #f60 } /* Literal.Number */
+.highlight .s { color: #d44950 } /* Literal.String */
+.highlight .na { color: #4f9fcf } /* Name.Attribute */
+.highlight .nb { color: #366 } /* Name.Builtin */
+.highlight .nc { color: #0a8; } /* Name.Class */
+.highlight .no { color: #360 } /* Name.Constant */
+.highlight .nd { color: #99f } /* Name.Decorator */
+.highlight .ni { color: #999; } /* Name.Entity */
+.highlight .ne { color: #c00; } /* Name.Exception */
+.highlight .nf { color: #c0f } /* Name.Function */
+.highlight .nl { color: #99f } /* Name.Label */
+.highlight .nn { color: #0cf; } /* Name.Namespace */
+.highlight .nt { color: #2f6f9f; } /* Name.Tag */
+.highlight .nv { color: #033 } /* Name.Variable */
+.highlight .ow { color: #000; } /* Operator.Word */
+.highlight .w { color: #bbb } /* Text.Whitespace */
+.highlight .mf { color: #f60 } /* Literal.Number.Float */
+.highlight .mh { color: #f60 } /* Literal.Number.Hex */
+.highlight .mi { color: #f60 } /* Literal.Number.Integer */
+.highlight .mo { color: #f60 } /* Literal.Number.Oct */
+.highlight .sb { color: #c30 } /* Literal.String.Backtick */
+.highlight .sc { color: #c30 } /* Literal.String.Char */
+.highlight .sd { color: #c30; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #c30 } /* Literal.String.Double */
+.highlight .se { color: #c30; } /* Literal.String.Escape */
+.highlight .sh { color: #c30 } /* Literal.String.Heredoc */
+.highlight .si { color: #a00 } /* Literal.String.Interpol */
+.highlight .sx { color: #c30 } /* Literal.String.Other */
+.highlight .sr { color: #3aa } /* Literal.String.Regex */
+.highlight .s1 { color: #c30 } /* Literal.String.Single */
+.highlight .ss { color: #fc3 } /* Literal.String.Symbol */
+.highlight .bp { color: #366 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #033 } /* Name.Variable.Class */
+.highlight .vg { color: #033 } /* Name.Variable.Global */
+.highlight .vi { color: #033 } /* Name.Variable.Instance */
+.highlight .il { color: #f60 } /* Literal.Number.Integer.Long */
+
+.css .o,
+.css .o + .nt,
+.css .nt + .nt { color: #999; }
+
+
+
+/*
+* Bigfoot tooltip popovers
+*
+*
+*/
+
+.bigfoot-footnote__button {
+  position: relative;
+  z-index: 5;
+  top: -0.15rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  padding: 0.45rem;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: $light-grey;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  font-size: 0.8rem;
+  line-height: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  transition: background-color 0.25s ease-in-out;
+  color: white;
+}
+
+.bigfoot-footnote__button:hover,
+.bigfoot-footnote__button:focus {
+  outline: none;
+  background-color: $grey;
+}
+
+.bigfoot-footnote__button:active {
+  background-color: $grey;
+}
+
+.bigfoot-footnote__button.is-active {
+  background-color: $grey;
+}
+
+// make footnotes display numbers instead of three dots
+ .bigfoot-footnote__button:before {
+   content: attr(data-footnote-identifier);
+ }
+
+.bigfoot-footnote__button:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.bigfoot-footnote__container {
+  display: inline-block;
+  position: relative;
+  text-indent: 0;
+
+}
+
+@media not print {
+  .footnote-print-only {
+    display: none !important;
+  }
+}
+
+@media print {
+  .bigfoot-footnote,
+  .bigfoot-footnote__button {
+    display: none !important;
+  }
+}
+
+.bigfoot-footnote {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 90%;
+  margin: 1.96924em 0;
+  background: #dfe8db;
+  opacity: 0;
+  border-radius: 0.5em;
+  border: 1px solid $grey;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  line-height: 0;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transform: scale(0.1) translateZ(0);
+  -ms-transform: scale(0.1) translateZ(0);
+  transform: scale(0.1) translateZ(0);
+  -webkit-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+
+.bigfoot-footnote.is-positioned-top {
+  top: auto;
+  bottom: 0;
+}
+
+.bigfoot-footnote.is-active {
+  -webkit-transform: scale(1) translateZ(0);
+  -ms-transform: scale(1) translateZ(0);
+  transform: scale(1) translateZ(0);
+  opacity: 0.97;
+}
+
+.bigfoot-footnote.is-bottom-fixed {
+  position: fixed;
+  bottom: 0;
+  top: auto;
+  left: 0;
+  right: auto;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  opacity: 1;
+  border-width: 1px 0 0;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+.bigfoot-footnote.is-bottom-fixed.is-active {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.bigfoot-footnote.is-bottom-fixed .bigfoot-footnote__wrapper {
+  margin: 0 0 0 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  max-width: 100%;
+}
+
+.bigfoot-footnote.is-bottom-fixed .bigfoot-footnote__wrapper,
+.bigfoot-footnote.is-bottom-fixed .bigfoot-footnote__content {
+  border-radius: 0;
+}
+
+.bigfoot-footnote.is-bottom-fixed .bigfoot-footnote__tooltip {
+  display: none;
+}
+
+.bigfoot-footnote.is-scrollable:after {
+  content: '';
+  position: absolute;
+  bottom: 0.3375em;
+  left: 0.3375em;
+  z-index: 14;
+  display: block;
+  height: 0.78125em;
+  width: 0.625em;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTJweCIgaGVpZ2h0PSIxNXB4IiB2aWV3Qm94PSIwIDAgMTIgMTUiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pbllNaW4iPgogICAgPGcgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkFycm93IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLjAwMDAwMCwgMS4wMDAwMDApIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiPgogICAgICAgICAgICA8cGF0aCBkPSJNNSwwIEw1LDExLjUiIGlkPSJMaW5lIj48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0wLjUsNy41IEw1LjAyNzY5Mjc5LDEyLjAyNzY5MjgiIGlkPSJMaW5lIj48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik00LjUsNy41IEw5LjAyNzY5Mjc5LDEyLjAyNzY5MjgiIGlkPSJMaW5lLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcuMDAwMDAwLCAxMC4wMDAwMDApIHNjYWxlKC0xLCAxKSB0cmFuc2xhdGUoLTcuMDAwMDAwLCAtMTAuMDAwMDAwKSAiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPgo=");
+  -webkit-background-size: cover;
+  background-size: cover;
+  opacity: 0.1;
+  transition-properties: opacity;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.bigfoot-footnote.is-scrollable .bigfoot-footnote__wrapper:before,
+.bigfoot-footnote.is-scrollable .bigfoot-footnote__wrapper:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  z-index: 12;
+  left: 0;
+}
+
+.bigfoot-footnote.is-scrollable .bigfoot-footnote__wrapper:before {
+  top: -1px;
+  height: 1.1em;
+  border-radius: 0.5em 0.5em 0 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(rgba(250, 250, 250, 0)));
+  background-image: -webkit-linear-gradient(top, #fafafa 50%, rgba(250, 250, 250, 0) 100%);
+  background-image: linear-gradient(to bottom, #fafafa 50%, rgba(250, 250, 250, 0) 100%);
+}
+
+.bigfoot-footnote.is-scrollable .bigfoot-footnote__wrapper:after {
+  bottom: -1px;
+  height: 1.2em;
+  border-radius: 0 0 0.5em 0.5em;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fafafa), to(rgba(250, 250, 250, 0)));
+  background-image: -webkit-linear-gradient(bottom, #fafafa 50%, rgba(250, 250, 250, 0) 100%);
+  background-image: linear-gradient(to top, #fafafa 50%, rgba(250, 250, 250, 0) 100%);
+}
+
+.bigfoot-footnote.is-scrollable ::-webkit-scrollbar {
+  display: none;
+}
+
+.bigfoot-footnote.is-fully-scrolled:after,
+.bigfoot-footnote.is-fully-scrolled:before {
+  opacity: 0;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+}
+
+.bigfoot-footnote__wrapper {
+  position: relative;
+  z-index: 14;
+  width: 22em;
+  display: inline-block;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  overflow: hidden;
+  margin: 0;
+  background-color: #fafafa;
+  border-radius: 0.5em;
+  line-height: 0;
+}
+
+.bigfoot-footnote__content {
+  font-size: smaller;
+
+
+  position: relative;
+  z-index: 8;
+  display: inline-block;
+  max-height: 15em;
+  padding: 1.1em 1.3em 1.2em;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  background: #fafafa;
+  border-radius: 0.5em;
+  font-smoothing: subpixel-antialiased;
+  line-height: normal;
+}
+
+.bigfoot-footnote__content img {
+  max-width: 100%;
+}
+
+.bigfoot-footnote__content *:last-child {
+  margin-bottom: 0 !important;
+}
+
+.bigfoot-footnote__content *:first-child {
+  margin-top: 0 !important;
+}
+
+.bigfoot-footnote__tooltip {
+  position: absolute;
+  z-index: 12;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: -0.65em;
+  width: 1.3em;
+  height: 1.3em;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: #fafafa;
+  border: 1px solid $grey;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 0;
+}
+
+.is-positioned-bottom .bigfoot-footnote__tooltip {
+  top: -0.65em;
+}
+
+.is-positioned-top .bigfoot-footnote__tooltip {
+  bottom: -0.65em;
+}

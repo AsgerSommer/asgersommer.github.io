@@ -1,13 +1,26 @@
-title:        Asger Sommer
-tagline:      'Asger Sommer'
-description:  'A blog about code, science and design.'
-url:          http://asgersommer.com
-version:      1.1.1
+# Description
+title:            Asger Sommer
+description:      'A blog about code, science and design.'
+url:              http://asgersommer.com
+version:          1.0.0
 author:
-  name:       'Asger Sommer'
-  email:      ''
-permalink:    pretty
-markdown:     redcarpet
-highlighter:  rouge
-paginate:     5
-gems:         [jekyll-paginate]
+  name:           Asger Sommer
+  url:            https://twitter.com/AsgerSommer
+github:
+  repo:           https://github.com/AsgerSommer/asgersommer.github.io
+
+# Setup
+markdown:         kramdown
+highlighter:      rouge
+gems:             [jekyll-paginate]
+sass:
+  style:          :compressed
+permalink:        pretty
+paginate:         5
+baseurl:          /
+
+
+
+
+
+

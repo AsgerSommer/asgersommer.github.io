@@ -1,43 +1,62 @@
 ---
 layout: default
+title: Home
 ---
 
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
-    <h1>
+    <h1 class="post-title">
+      {% if post.link %}
+      <a href="{{ post.link }}">
+        ⇜ {{ post.title }} ⇝
+      </a>
+      {% else %}
       <a href="{{ post.url }}">
         {{ post.title }}
       </a>
+      {% endif %}
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <p class="post-metadata">
+      <span class="post-date">
+        {{ post.date | date: "%B %-d, %Y" }}
+        {% if post.link %}
+        <span><a class="permalink" href="{{ post.url }}">∞</a></span>
+        {% endif %}
+      </span>
 
+      <span class="read-time" title="Estimated read time">
+         • {% assign reading_time = post.content | strip_html | number_of_words | plus:91 | divided_by: 180 %}
+
+    {% if reading_time < 0.5 %}1 min read
+    {% else %}{{ reading_time }} min read
+    {% endif %}
+
+  </span>
+    </p>
     {{ post.content | split:"<!-- more -->" | first | truncate:300 }}
     {% if post.content | size > 300 %}
       <strong><a href="{{ post.url }}">Continue reading &#65515;</a></strong>
     {% endif %}
-
-    <!-- add an "strip_html | " after the "first |" to strip images from the excerpts -->
-
   </div>
   {% endfor %}
 </div>
 
-<!-- Pagination links -->
 <div class="pagination">
   {% if paginator.next_page %}
-    <a href="/page{{paginator.next_page}}" class="older">Older</a>
+  <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">← Older Stuff</a>
   {% else %}
-    <span class="next">Older</span>
+  <a class="pagination-item filler"></a>
   {% endif %}
   {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a href="/" class="newer">Newer</a>
-    {% else %}
-      <a href="/page{{paginator.previous_page}}" class="newer">Newer</a>
-    {% endif %}
+  {% if paginator.page == 2 %}
+  <a class="pagination-item newer" href="{{ site.baseurl }}">Newer Stuff →</a>
   {% else %}
-    <span class="previous">Newer</span>
+  <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer Stuff →</a>
   {% endif %}
+  {% else %}
+  <a class="pagination-item filler"></a>
+  {% endif %}
+  <div class="clear"></div>
 </div>

@@ -1,45 +1,27 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body class="layout">
-
-    <header class="masthead">
-      <div class="masthead-inner">
-        <h1><a href="http://asgersommer.com">{{ site.title }}</a></h1>
-        <p class="lead">{{ site.description }}</p>
-
-        <div class="colophon">
-          <ul class="colophon-links" id="SPECIAL">
-            <li>
-              <a href="https://twitter.com/AsgerSommer" class="button">My Twitter</a>
-            </li>
-            <li>
-              <a href="https://github.com/asgersommer" class="button">My Github</a>
-            </li> 
-            <li>
-              <a href="http://asgersommer.com/about-me" class="button">About Me</a>
-            </li>
-          </ul>
-          <!-- <p>&copy; 2016. {{ site.author.name }} All rights reserved.</p> -->
-        </div>
-      </div>
-    </header>
-
-    <div class="content container">
-      {{ content }}
+<body>
+  <div class="masthead-container">
+    <div class="masthead">
+      <span class="masthead-title">
+        <a href="{{ site.url }}" title="Home">{{ site.title }}</a>
+        <small>{{ site.tagline }}</small>
+      </span>
+      <span class="nav-page">
+        {% for weight in (1..10) %} {% for p in site.pages %} {% if p.weight == weight %}
+        <a {% if p.url == page.url %}class="active"{% endif %} href="{{p.url }}"> {{ p.title }}</a>
+        {% endif %} {% endfor %} {% endfor %}
+        <a href ="/rss.xml">RSS</a>
+      </span>
     </div>
+  </div>
+  <div class="container content">
+    {{ content }}
+  </div>
 
-    <!-- Google Analytics -->
-    <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-    var pageTracker = _gat._getTracker("UA-47446601-1");
-    pageTracker._trackPageview();
-    </script>
-    <!-- Google Analytics end -->
-  </body>
+</body>
+
 </html>
