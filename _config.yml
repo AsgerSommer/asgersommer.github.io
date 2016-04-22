@@ -8,5 +8,6 @@ author:
   email:      ''
 permalink:    pretty
 markdown:     redcarpet
-pygments:     true
+highlighter:  pygments
 paginate:     5
+gems:         [jekyll-paginate]
