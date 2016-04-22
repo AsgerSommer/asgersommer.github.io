@@ -282,7 +282,8 @@ img + em {
 .img-circular {
   border-radius: 50%;
   shape-outside: circle();
-  margin: 0 0 1em 1em;
+  margin: 1em 1em 1em 1em;
+  /* used to be: 0 0 1em 1em */
 }
 
 /* Paragraph Alignment */
