@@ -1,10 +1,10 @@
 title:        Asger Sommer
-tagline:      'Asger Sommer (Sommer717)'
-description:  'A blog about code, design and games.'
+tagline:      'Asger Sommer'
+description:  'A blog about code, science and design.'
 url:          http://asgersommer.com
 version:      1.1.1
 author:
-  name:       ''
+  name:       'Asger Sommer'
   email:      ''
 permalink:    pretty
 markdown:     redcarpet
