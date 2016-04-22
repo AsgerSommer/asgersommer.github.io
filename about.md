@@ -4,7 +4,7 @@ title: About
 weight: 5
 ---
 
-![test](/assets/me.jpg){: .img-right .img-circular}
+![test](/assets/me.jpg){: .img-right}
 
 Hi, I'm Asger Sommer.
 
