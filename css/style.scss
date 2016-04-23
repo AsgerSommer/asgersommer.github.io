@@ -244,8 +244,8 @@ blockquote p:last-child {
 }
 
 img {
-  display: inline;
-  width: 100%;
+  display: inherit;
+  width: auto;
   height: auto;
 }
 
