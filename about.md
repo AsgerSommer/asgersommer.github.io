@@ -9,7 +9,7 @@ title: About
 Hi, I'm Asger Sommer.
 
 I live in Denmark and attend [Technical University of
-Denmark](http://www.dtu.dk/), studying Physics & Nanotechnology[^1].
+Denmark](http://www.dtu.dk/), studying Physics & Nanotechnology.[^1]
 
 Though I will certainly be blogging about topics related to science, physics and
 nanotechnology, the general topic scope here is going to be much broader.
