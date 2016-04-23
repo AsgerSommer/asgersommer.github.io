@@ -4,9 +4,7 @@ weight: "5"
 title: About
 ---
 
-![test](/assets/notme.jpg)
-
-{: .img-right .img-circular}
+![test](/assets/notme.jpg){: .img-right .img-circular}
 
 Hi, I'm Asger Sommer.
 
