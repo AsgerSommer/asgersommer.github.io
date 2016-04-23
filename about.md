@@ -19,7 +19,7 @@ nanotechnology, the general topic scope here is going to be much broader.
 In my spare time, i'm working on certain *currently unannounced secret
 projects*.
 
-You can find me on <i class="fa fa-twitter" aria-hidden="true"></i>[Twitter](https://twitter.com/AsgerSommer), and
+You can find me on <i class="fa fa-twitter" aria-hidden="true"></i> [Twitter](https://twitter.com/AsgerSommer), and
 [Github](https://github.com/AsgerSommer). You can also subscribe to my blog
 through [RSS](http://asgersommer.com/rss.xml). Currently I'm aiming for a
 biweekly posting schedule.
