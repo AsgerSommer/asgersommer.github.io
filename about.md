@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-weight: 5
+weight: 9
 ---
 
 ![test](/assets/notme.jpg){: .img-right .img-circular}
