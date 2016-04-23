@@ -12,7 +12,9 @@ github:
 # Setup
 markdown:         kramdown
 highlighter:      rouge
-gems:             [jekyll-paginate]
+gems:  
+  - jekyll-sitemap           
+  - jekyll-paginate
 sass:
   style:          :compressed
 permalink:        pretty
