@@ -243,7 +243,15 @@ blockquote p:last-child {
   margin-bottom: 0;
 }
 
+/* DISABLED TO ALLOW EMOJIS
+
 img {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
+
+img-post {
   display: block;
   width: 100%;
   height: auto;
