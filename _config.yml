@@ -15,6 +15,7 @@ highlighter:      rouge
 gems:  
   - jekyll-sitemap           
   - jekyll-paginate
+  - jemoji
 sass:
   style:          :compressed
 permalink:        pretty
