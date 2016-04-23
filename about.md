@@ -6,7 +6,7 @@ weight: 2
 
 ![test](/assets/notme.jpg){: .img-right .img-circular}
 
-Hi, I'm Asger Sommer.
+Hi :wave:, I'm Asger Sommer.
 
 I live in Denmark and attend [Technical University of
 Denmark](http://www.dtu.dk/), studying Physics & Nanotechnology.[^1]
