@@ -19,17 +19,6 @@ permalink:        pretty
 paginate:         5
 baseurl:          ""
 
-# Sitemap
-sitemap:
-    file: "/sitemap.xml"
-    exclude:
-        - "/rss.xml"
-    include_posts:
-        - "/index.html"
-        - "/archive.html"
-    change_frequency_name: "change_frequency"
-    priority_name: "priority"
-
 
 
 
