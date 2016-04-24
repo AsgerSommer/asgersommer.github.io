@@ -3,8 +3,9 @@ layout: page
 title: About
 weight: 2
 ---
-
+{::comment}
 ![test](/assets/notme.jpg){: .img-right .img-circular}
+{:/comment}
 
 Hi :wave:, I'm Asger Sommer.
 
