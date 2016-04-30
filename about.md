@@ -4,7 +4,7 @@ title: About
 weight: 2
 ---
 
-![Hi](/assets/profile.jpg){: .img-right .img-circular}
+![Asger Sommer](/assets/profile.jpg){: .img-right .img-circular}
 
 Hi :wave:, I'm Asger Sommer.
 
