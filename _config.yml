@@ -2,6 +2,8 @@
 title:            Asger Sommer
 description:      'A blog about code, science and design.'
 url:              https://asgersommer.com
+# enforce_ssl:    asgersommer.com
+
 version:          1.0.0
 author:
   name:           Asger Sommer
