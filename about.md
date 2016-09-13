@@ -8,7 +8,7 @@ weight: 2
 
 Hi :wave:, I'm Asger Sommer.
 
-I live in Denmark and attend [Technical University of
+I live in Denmark and attend the [Technical University of
 Denmark](http://www.dtu.dk/), studying Physics & Nanotechnology.[^1]
 
 Though I will certainly be blogging about topics related to science, physics and
