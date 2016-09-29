@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-weight: 1
+weight: 2
 ---
 
 Come back when I'm actually productive :stuck_out_tongue_winking_eye:.

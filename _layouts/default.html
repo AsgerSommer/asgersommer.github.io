@@ -11,16 +11,21 @@
         <small>{{ site.tagline }}</small>
       </span>
       <span class="nav-page">
-        {% for weight in (1..10) %} {% for p in site.pages %} {% if p.weight == weight %}
+        <a href ="/projects/">PROJECTS</a>
+        <a href ="/blog/">BLOG</a>
+        <a href ="/archive/">ARCHIVE</a>
+        <!-- hardcoded setup, since the non-home pagination creates multiple copies of "BLOG" in the navigation bar, the old dynamic code is below: -->
+        <!-- {% for weight in (1..10) %} {% for p in site.pages %} {% if p.weight == weight %}
         <a {% if p.url == page.url %}class="active"{% endif %} href="{{p.url }}"> {{ p.title }}</a>
-        {% endif %} {% endfor %} {% endfor %}
-        <!-- <a href ="/rss.xml">RSS</a> -->
+        {% endif %} {% endfor %} {% endfor %} -->
+        <!--- a href ="/rss.xml">RSS</a> -->
       </span>
     </div>
   </div>
   <div class="container content">
     {{ content }}
   </div>
+  <br></br>
 
 </body>
 
