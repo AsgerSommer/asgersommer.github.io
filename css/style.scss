@@ -284,6 +284,7 @@ img + em {
 // attempt at centering profile pic :)
 @media only screen and (max-width: 560px) {
 .img-circular {
+  shape-outside: none !important;
   margin-top: -1em !important;
   margin-bottom: 1em !important;
   margin-left: 25% !important;
