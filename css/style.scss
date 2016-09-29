@@ -281,6 +281,19 @@ img + em {
   float: right;
 }
 
+// attempt at centering profile pic :)
+@media only screen and (max-width: 560px) {
+.img-circular {
+  margin-top: -1em !important;
+  margin-bottom: 1em !important;
+  margin-left: 25% !important;
+  margin-right: 25% !important;
+  width: 50%;
+  position: static;
+  // increased from 30
+}
+}
+
 .img-left {
   margin-right: 1em;
   margin-bottom: 1em;
