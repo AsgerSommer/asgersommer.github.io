@@ -12,8 +12,7 @@ Hi :wave:, I'm Asger Sommer.
 I live in Denmark and attend the [Technical University of
 Denmark](http://www.dtu.dk/), studying Physics & Nanotechnology.[^1]
 
-On my [blog](./blog/) I aim to write a few monthly posts about topics, thoughts and ideas that I've found interesting. Though I will certainly be blogging about topics related to science, physics and
-nanotechnology, the general scope here is (hopefully) going to be much broader.
+On my [blog](./blog/) you'll find posts about topics, thoughts and ideas that I've found interesting. Though I will certainly be blogging about topics related to science, physics and nanotechnology, the general scope is (hopefully) going to be much broader.
 
 [^1]: No, we're not working on self-replicating world-eating nanobots. Yet.
 
