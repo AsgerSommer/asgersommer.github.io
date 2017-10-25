@@ -10,9 +10,9 @@ sitemap:
 Hi :wave:, I'm Asger Sommer.
 
 I live in Denmark and attend the [Technical University of
-Denmark](http://www.dtu.dk/), studying Physics & Nanotechnology.[^1]
+Denmark](http://www.dtu.dk/), studying Physics & Nanotechnology.{::comment}[^1]{:/comment}
 
-In my spare time, I'm working on some personal [projects](./projects/), and you can follow along on the blog.
+In my spare time, I'm working on some personal [projects](./projects/).
 
 {::comment}
 On the [blog](./blog/) you'll also find posts about topics and ideas that I've found interesting. Though I will certainly be blogging about topics related to science, physics and nanotechnology, the general scope will be broader.
