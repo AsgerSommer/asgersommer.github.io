@@ -4,13 +4,10 @@ title: Projects
 weight: 2
 ---
 
-Come back when I'm actually productive :stuck_out_tongue_winking_eye:.
-
-{::comment}
-## [Untitled][LINK1] (2016)
-*Tagline*
+## Er Nanobar Åben? (2017)
+Created [ernanobaråben.dk][LINK1], inspired by [erkælderbarenåben.dk][LINK2].
 
 ..
 
-[LINK1]: http://asgersommer.com
-{:/comment}
+[LINK1]: http://ernanobaråben.dk
+[LINK2]: http://erkælderbarenåben.dk
