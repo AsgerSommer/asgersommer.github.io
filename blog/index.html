@@ -37,7 +37,7 @@ weight: 0
   </span>
     </p>
     {{ post.content | split:"<!-- more -->" | first | truncate:300 }}
-    {% if post.content | size > 300 %}
+    {% if post.content.size > 300 %}
       <strong><a href="{{ post.url }}">Continue reading &#65515;</a></strong>
     {% endif %}
   </div>
