@@ -7,7 +7,7 @@ tags:		LaTeX
 comments:   true
 ---
 
-Ever wondered how to do deal with requests like these, when writing your assignments in LaTeX?
+Ever wondered how to deal with requests like these, when writing your assignments in LaTeX?
 
 >You have a maximum of two pages to do it. One page equals 2400 units (incl. letters, digits and spaces). 
 
