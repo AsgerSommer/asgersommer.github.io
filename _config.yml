@@ -14,7 +14,7 @@ github:
 # Setup
 markdown:         kramdown
 highlighter:      rouge
-gems:  
+plugins:  
   - jekyll-sitemap           
   - jekyll-paginate
   - jemoji
