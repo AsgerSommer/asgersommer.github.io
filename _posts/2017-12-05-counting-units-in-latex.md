@@ -27,8 +27,8 @@ Got a computer running macOS or Linux with a LaTeX installation? Say no more, he
 % Define macro \unitcount for including the unit count
 \newcommand\unitcount{\input{sum.sum}}
 ```
-
-3. Use `\unitcount` wherever you want it in your LaTeX document to get the unit count.
+3. Change `text.tex` to the relevant .tex file you want to count units in. Add more files if your document is split up.
+4. Use `\unitcount` wherever you want it in your LaTeX document to get the unit count.
 
 So, here's the caveat: it might slightly overestimate the character count. While TeXcount counts characters (abc etc.) and punctuation (,.), it doesn't count spaces. So here I'm using the amount of words as a proxy for spaces. Also, it will require your LaTeX-editor to allow shell escaping.
 
