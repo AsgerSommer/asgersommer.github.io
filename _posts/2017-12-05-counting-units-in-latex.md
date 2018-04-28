@@ -20,14 +20,14 @@ Got a computer running macOS or Linux with a LaTeX installation? Say no more, he
 
     ```latex
 % Run texcount to get word and character count
-\immediate\write18{texcount text.tex -template="{1}" -out=words.sum}
-\immediate\write18{texcount text.tex -template="{1}" -char -out=chars.sum}
+\immediate\write18{texcount text1.tex text2.tex -total -template="{1}" -out=words.sum}
+\immediate\write18{texcount text1.tex text2.tex -total -template="{1}" -char -out=chars.sum}
 % Run bash commands to get the sum (i.e. unit count)
 \immediate\write18{\unexpanded{paste -d+ words.sum chars.sum | bc > sum.sum}}
 % Define macro \unitcount for including the unit count
 \newcommand\unitcount{\input{sum.sum}}
 ```
-3. Change `text.tex` to the relevant .tex file you want to count units in. Add more files if your document is split up.
+3. Change `text1.tex`, `text2.tex` etc. to the relevant .tex file(s) you want to count units in.
 4. Use `\unitcount` wherever you want it in your LaTeX document to get the unit count.
 
 So, here's the caveat: it might slightly overestimate the character count. While TeXcount counts characters (abc etc.) and punctuation (,.), it doesn't count spaces. So here I'm using the amount of words as a proxy for spaces. Also, it will require your LaTeX-editor to allow shell escaping.
