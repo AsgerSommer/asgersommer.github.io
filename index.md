@@ -20,5 +20,7 @@ On the [blog](./blog/) you'll also find posts about topics and ideas that I've f
 
 [^1]: No, we're not working on self-replicating world-eating nanobots. Yet.
 
-You can find me on <a href="https://twitter.com/AsgerSommer"><i class="fa fa-twitter" aria-hidden="true" style="margin-right: 4px"></i>Twitter</a>, <a href="https://linkedin.com/in/asgersommer"><i class="fa fa-linkedin-square" aria-hidden="true" style="margin-right: 4px"></i>LinkedIn</a> and <a href="https://github.com/AsgerSommer"><i class="fa fa-github-alt" aria-hidden="true" style="margin-right: 4px"></i>GitHub</a>. {::comment}
-You can also subscribe to my blog through <a href="http://asgersommer.com/rss.xml"><i class="fa fa-rss" aria-hidden="true" style="margin-right: 4px"></i>RSS</a>. Currently I'm aiming for a biweekly posting schedule.{:/comment}
+You can find me on <a href="https://twitter.com/AsgerSommer"><i class="fab fa-twitter" aria-hidden="true" style="margin-right: 4px"></i>Twitter</a>, <a href="https://linkedin.com/in/asgersommer"><i class="fab fa-linkedin" aria-hidden="true" style="margin-right: 4px"></i>LinkedIn</a>, <a href="https://github.com/AsgerSommer"><i class="fab fa-github-alt" aria-hidden="true" style="margin-right: 4px"></i>GitHub</a> and <a href="https://gitlab.com/asgersommer"><i class="fab fa-gitlab" aria-hidden="true" style="margin-right: 4px"></i>GitLab</a>.
+
+{::comment}
+You can also subscribe to my blog through <a href="http://asgersommer.com/rss.xml"><i class="fab fa-rss" aria-hidden="true" style="margin-right: 4px"></i>RSS</a>{:/comment}
