@@ -276,8 +276,8 @@ img + em {
 .img-right {
   margin-left: 1em;
   margin-bottom: 1em;
-  width: 42%;
-  // increased from 30
+  width: 30%;
+  // used to be 30, then 42, now 30 again
   float: right;
 }
 
