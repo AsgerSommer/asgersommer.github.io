@@ -1,8 +1,11 @@
 # Description
 title:            Asger Sommer
 description:      'A blog about code, science and design.'
+baseurl:          ""
 url:              https://asgersommer.com
 # enforce_ssl:    asgersommer.com
+twitter_username: AsgerSommer
+github_username:  AsgerSommer
 
 version:          1.0.0
 author:
