@@ -7,7 +7,7 @@ sitemap:
 
 {::comment}
 ![Asger Sommer](/assets/profile.jpg){: .img-right .img-circular}
-{::comment}
+{::/comment}
 
 Hi :wave:, I'm Asger Sommer. 
 
