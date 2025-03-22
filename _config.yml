@@ -1,7 +1,7 @@
 # Description
 title:            Asger Sommer
 description:      'A blog about code, science and design.'
-#baseurl:          ""
+#baseurl:          "" # apparently this breaks github pages serve of jekyll
 url:              https://asgersommer.com
 # enforce_ssl:    asgersommer.com
 twitter_username: AsgerSommer
@@ -23,7 +23,6 @@ plugins:
 sass:
   style:          :compressed
 permalink:        pretty
-baseurl:          ""
 gems:
   - jekyll-paginate-v2
 
