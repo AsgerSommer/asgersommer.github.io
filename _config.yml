@@ -1,16 +1,16 @@
 # Description
 title:            Asger Sommer
 description:      'A blog about code, science and design.'
-#baseurl:          "" # apparently this breaks github pages serve of jekyll
+baseurl:          "" # apparently this breaks github pages serve of jekyll
 url:              https://asgersommer.com
-# enforce_ssl:    asgersommer.com
+enforce_ssl:    asgersommer.com
 twitter_username: AsgerSommer
 github_username:  AsgerSommer
 
 version:          1.0.0
 author:
   name:           Asger Sommer
-  url:            https://twitter.com/AsgerSommer
+  url:            https://asgersommer.com
 github:
   repo:           https://github.com/AsgerSommer/asgersommer.github.io
 
@@ -36,6 +36,5 @@ pagination:
   sort_field: 'date'
   sort_reverse: true
 
-
 # Produces a cleaner folder structure when using categories
-permalink: /:year/:month/:title.html
+# permalink: /:year/:month/:title.html
