@@ -30,11 +30,8 @@ gems:
 pagination:
   enabled: true
   per_page: 3
-  permalink: '/page/:num/'
+  permalink: /:year/:month/:title.html
   title: ' - page :num'
   limit: 0
   sort_field: 'date'
   sort_reverse: true
-
-# Produces a cleaner folder structure when using categories
-# permalink: /:year/:month/:title.html
