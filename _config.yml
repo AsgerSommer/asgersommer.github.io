@@ -1,7 +1,7 @@
 # Description
 title:            Asger Sommer
 description:      'A blog about code, science and design.'
-baseurl:          ""
+#baseurl:          ""
 url:              https://asgersommer.com
 # enforce_ssl:    asgersommer.com
 twitter_username: AsgerSommer
