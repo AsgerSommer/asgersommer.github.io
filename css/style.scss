@@ -3,6 +3,11 @@ sitemap:
   exclude: 'yes'
 ---
 
+.icon-margin {
+    margin-right: 6px;
+    margin-left: 2px;
+}
+
 /*
 this ensures Jekyll reads the file to be transformed into CSS later
 only Main files contain this front matter, not partials.
@@ -273,6 +278,13 @@ img + em {
   width: auto;
 }
 
+.img-left {
+  margin-right: 1em;
+  margin-bottom: 1em;
+  width: 30.5%;
+  float: left;
+}
+
 .img-right {
   margin-left: 1em;
   margin-bottom: 1em;
@@ -294,12 +306,6 @@ img + em {
 }
 }
 
-.img-left {
-  margin-right: 1em;
-  margin-bottom: 1em;
-  width: 30%;
-  float: left;
-}
 
 .img-circular {
   border-radius: 50%;

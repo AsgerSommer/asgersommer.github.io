@@ -19,15 +19,24 @@ markdown:         kramdown
 highlighter:      rouge
 plugins:  
   - jekyll-sitemap           
-  - jekyll-paginate
   - jemoji
 sass:
   style:          :compressed
 permalink:        pretty
-paginate:         5
-paginate_path:    "/blog/page:num/"
 baseurl:          ""
+gems:
+  - jekyll-paginate-v2
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: '/page/:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 
-
-
+# Produces a cleaner folder structure when using categories
+permalink: /:year/:month/:title.html
