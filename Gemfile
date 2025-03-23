@@ -19,6 +19,7 @@ group :jekyll_plugins do
   gem 'jekyll-paginate-v2', '~> 3.0'
   gem 'jekyll-sitemap'
   gem 'jemoji', '~> 0.13.0'
+  gem 'jekyll-tagging'
 end
 
 

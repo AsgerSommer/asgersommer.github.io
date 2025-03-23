@@ -3,6 +3,18 @@ sitemap:
   exclude: 'yes'
 ---
 
+.tags-cloud a {
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px;
+  display: inline-block;
+  color: #333;
+}
+
+.tags-cloud a:hover {
+  color: #007BFF;
+}
+
 .icon-margin {
     margin-right: 6px;
     margin-left: 2px;

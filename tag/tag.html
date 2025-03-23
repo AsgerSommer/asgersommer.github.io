@@ -1,0 +1,19 @@
+---
+layout: default
+title: Tags
+permalink: /tag/
+---
+
+<!-- <div id="tag-cloud">
+  {{ site | tag_cloud }}
+</div> -->
+
+<div class="tags-cloud">
+  {% assign tags = site.tags | sort %}
+  {% for tag in tags %}
+    <a href="{{ tag[0] }}" style="font-size: {{ tag[1].size | times: 1.5 }}em;">
+      {{ tag[0] }} ({{ tag[1].size }})
+    </a>
+  {% endfor %}
+</div>
+

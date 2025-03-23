@@ -3,7 +3,7 @@ layout: 	post
 title:  	"Counting Units Directly in LaTeX"
 date:   	2017-12-05
 published:	true
-tags:		LaTeX
+tags:		[LaTeX]
 comments:   true
 ---
 

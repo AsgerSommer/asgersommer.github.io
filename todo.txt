@@ -1,7 +1,0 @@
-gems to install
-
-jekyll-sitemap
-jekyll-paginate
-jemoji
-
-maybe make a gemfile that works?

@@ -92,6 +92,8 @@ GEM
       jekyll (>= 3.8, < 5.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-tagging (1.1.0)
+      nuggets
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     jemoji (0.13.0)
@@ -132,6 +134,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.18.5-x86_64-linux-musl)
       racc (~> 1.4)
+    nuggets (1.6.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (6.0.1)
@@ -194,6 +197,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.12)
   jekyll-paginate-v2 (~> 3.0)
   jekyll-sitemap
+  jekyll-tagging
   jemoji (~> 0.13.0)
   minima (~> 2.5)
   tzinfo (>= 1, < 3)
