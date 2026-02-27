@@ -5,6 +5,7 @@ sitemap:
 
 .post img {
   width: auto;
+  max-inline-size: 100%;
   max-width: 100%;
   height: auto;
   display: block;
@@ -14,6 +15,10 @@ sitemap:
 .post img.img-post {
   width: auto;
   max-width: 100%;
+}
+
+.post {
+  overflow-wrap: break-word;
 }
 
 .tags-cloud a {
