@@ -4,10 +4,16 @@ sitemap:
 ---
 
 .post img {
+  width: auto;
   max-width: 100%;
   height: auto;
   display: block;
   margin: 1.5rem auto;
+}
+
+.post img.img-post {
+  width: auto;
+  max-width: 100%;
 }
 
 .tags-cloud a {
@@ -275,11 +281,11 @@ img {
   height: auto;
 } */
 
-.img-post {
+/* .img-post {
   display: block;
   width: 100%;
   height: auto;
-}
+} */
 
 img + em {
   display: block;
