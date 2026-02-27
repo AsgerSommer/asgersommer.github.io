@@ -4,17 +4,10 @@ sitemap:
 ---
 
 .post img {
-  width: auto;
-  max-inline-size: 100%;
-  max-width: 100%;
-  height: auto;
   display: block;
+  width: 100%;
+  height: auto;
   margin: 1.5rem auto;
-}
-
-.post img.img-post {
-  width: auto;
-  max-width: 100%;
 }
 
 .post {
