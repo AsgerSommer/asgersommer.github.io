@@ -16,9 +16,9 @@ Even more so, its also to avoid the synchronizer from messing with the state of 
 But, besides:
 1. Normal syncing to the git repository.
 2. Normal backups to external hard drives.
-3. I'd still like it to be present on my synchronized file storage...
+3. I'd still like it to be backed up on my synchronized file storage...
 
-...so I've made a script to do so, `archiver.sh`:
+...so I've made a script to make it easy to zip the entire git folder into a synchronized folder, `archiver.sh`:
 
 ```
 #!/bin/bash
