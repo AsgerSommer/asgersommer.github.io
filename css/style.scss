@@ -3,6 +3,17 @@ sitemap:
   exclude: 'yes'
 ---
 
+.post img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+}
+
+.post {
+  overflow-wrap: break-word;
+}
+
 .tags-cloud a {
   text-decoration: none;
   margin: 5px;
@@ -268,11 +279,11 @@ img {
   height: auto;
 } */
 
-.img-post {
+/* .img-post {
   display: block;
   width: 100%;
   height: auto;
-}
+} */
 
 img + em {
   display: block;
@@ -308,7 +319,7 @@ img + em {
 // attempt at centering profile pic :)
 @media only screen and (max-width: 560px) {
 .img-circular {
-  shape-outside: none !important;
+  /* shape-outside: none !important; - Not needed anymore */
   margin-top: -1em !important;
   margin-bottom: 1em !important;
   margin-left: 25% !important;
@@ -321,9 +332,16 @@ img + em {
 
 .img-circular {
   border-radius: 50%;
-  shape-outside: circle();
+  /* shape-outside: circle(); - Disabled for cross-browser consistency */
   margin: 1em 1em 1em 1em;
   /* used to be: 0 0 1em 1em */
+}
+
+/* Ensure consistent left alignment for circular images across browsers */
+.img-left.img-circular {
+  shape-outside: none; /* Override to ensure consistent behavior */
+  float: left; /* Ensure left alignment */
+  clear: both; /* Prevent wrapping issues */
 }
 
 /* Paragraph Alignment */
